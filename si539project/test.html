@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>California</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Annie%20Use%20Your%20Telescope' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/** {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}*/
+.menu, .main, .right {
+  width: 100%;
+}
+
+@media only screen and (min-width:800px) {
+  /* For laptops: */
+  * {
+    box-sizing: border-box;
+  }
+  .menu {
+    float: left;
+    width: 20%;
+  }
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .right {
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+  }
+
+  /*.main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }*/
+}
+@media (orientation: landscape) {
+  /* For tables: */
+  /*.menu, .main, .right {
+    width: 100%;
+  }*/
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a href="index.html" aria-label="first link"><i class="fas fa-home"></i></a></div>
+    <div class="menuitem"><a href="california.html">california</a></div>
+    <div class="menuitem"><a href="charleston.html">charleston</a></div>
+    <div class="menuitem"><a href="contact.html">contact</a></div>
+  </div>
+
+  <div class="main">
+    <h2>California</h2>
+    <img src="images/page4/IMG_1400.JPG" style="width:100%">
+  </div>
+
+  <div class="right">
+    <img  src="images/page4/IMG_1406.JPG" style="width:100%;height:100%;" alt="">
+    <img  src="images/page4/IMG_1646.JPG" style="width:100%;height:100%;" alt="">
+    <img  src="images/page4/IMG_1572.JPG" style="width:100%;height:100%;" alt="">
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> copyright by </div>
+
+</body>
+</html>
