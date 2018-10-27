@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Charleston</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Annie%20Use%20Your%20Telescope' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <style>
+    .mySlides {
+      display: none;
+    }
+
+    .float-img-l {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      border: solid black 1px;
+      padding: 2px;
+    }
+
+    .float-img-r {
+      float: right;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      border: solid black 1px;
+      padding: 2px;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    body {
+      font-family: 'Annie Use Your Telescope';
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-label="first link"><i class="fas fa-home"></i></a></li>
+        <li><a href="california.html">california</a></li>
+        <li><a href="charleston.html">charleston</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <h1>Charleston</h1>
+    </header>
+    <div class="cal">
+      <p>I joined California Alternative for Break when I was a senior. We drove to Charleston in South Carolina and serviced children there. We had lots of fun there and enjoyed beaches there!</p>
+    </div>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="images/page3/IMG_3253.JPG" style="width:100%" alt="">
+    <img class="mySlides" src="images/page3/IMG_3257.JPG" style="width:100%" alt="">
+    <img class="mySlides" src="images/page3/IMG_3260.JPG" style="width:100%" alt="">
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>
